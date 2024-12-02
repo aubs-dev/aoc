@@ -52,7 +52,7 @@ pushd bin
 REM --- Compile & Run EXE: aoc
 if defined DO_RUN (
     echo [ Compile EXE: aoc ]
-    %COMPILER% ..\src\day_01.c -o aoc.exe %LINKER% || exit /B 1
+    %COMPILER% ..\src\day_02.c -o aoc.exe %LINKER% || exit /B 1
     echo [ Running: aoc ]
     if exist aoc.exe start /WAIT /B aoc.exe
 )
